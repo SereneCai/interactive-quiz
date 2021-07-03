@@ -6,3 +6,4 @@ An interactive quiz with animated score display.
 
 ##Preview
 
+![Quiz-front](https://github.com/SereneCai/interactive-quiz/blob/master/quiz-front.png)
