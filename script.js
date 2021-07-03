@@ -17,7 +17,18 @@ form.addEventListener('submit', (event)=>{
     });
 
     scrollTo(0,0);
-    showScore.querySelector('span').textContent = `${score}%`;
+    // showScore.querySelector('span').textContent = `${score}%`;
     showScore.classList.remove('d-none');
     // showScore.scrollIntoView();
+
+    let output = 0;
+    const timer = setInterval(()=>{
+        showScore.querySelector('span').textContent = `${output}%`;
+        if(output == score){
+            clearInterval(timer);
+        }
+        else{
+            output += 1;
+        }
+    }, 10)
 });
