@@ -28,7 +28,7 @@ form.addEventListener('submit', (event)=>{
             clearInterval(timer);
         }
         else{
-            output += 1;
+            output ++;
         }
     }, 10)
 });
