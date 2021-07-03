@@ -16,8 +16,8 @@ form.addEventListener('submit', (event)=>{
         
     });
 
+    scrollTo(0,0);
     showScore.querySelector('span').textContent = `${score}%`;
     showScore.classList.remove('d-none');
-
-
+    // showScore.scrollIntoView();
 });
